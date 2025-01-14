@@ -153,22 +153,6 @@ SK Networks AI 8기 2번째 단위 프로젝트입니다.
 # 7. 주요 프로시저
 
 # 8. Result (수행 결과)
-### ✅ Frontend / Backend / FastAPI / DLLS 구성에서 모든 동작이 안정적으로 잘 실행되는지 확인
-### ✅ FastAPI - DLLS 구성에서 사용자 요청에 따른 LLM 동작이 잘 동작하는지 확인
-### ✅ 구성한 사용자 정의형 프로토콜이 잘 동작하는지 확인
-### ✅ 시연 결과 모습
-
-![image](https://github.com/user-attachments/assets/09b2e0f6-66a1-4288-a012-81d424b158e9) 
-![image](https://github.com/user-attachments/assets/4f6940df-a192-43a9-a4d0-8e425dc25290)
-![image](https://github.com/user-attachments/assets/026a0e22-7868-4cf3-9aad-6911ae90a7a6)
-![image](https://github.com/user-attachments/assets/acebf5fb-cbfc-4053-96f8-57879e1ee081)
-![image](https://github.com/user-attachments/assets/c4017585-5472-48d0-905b-ec3b713c7ce3) 
-![image](https://github.com/user-attachments/assets/ffe79024-74c2-42b2-bab7-d759514eb208)  
-![image](https://github.com/user-attachments/assets/fdb4576b-e308-4d77-a82b-237857b53184)
-![image](https://github.com/user-attachments/assets/e86076e9-ed73-49d9-96f0-4ad491f83783)
-![image](https://github.com/user-attachments/assets/cc0f7bb1-fe7f-4457-94ca-1195a3fba255)
-
-<br><br><br>
 
   
 # 9. 한 줄 회고
