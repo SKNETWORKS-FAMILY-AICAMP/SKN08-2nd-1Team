@@ -53,7 +53,8 @@ SK Networks AI 8기 2번째 단위 프로젝트입니다.
 #### 1.1. 결측값 처리
 * 데이터셋에 결측값이 다수 포함되어 있으며, 이에 대한 처리가 필요했습니다.
   
-  ![Untitled](IMG/nat.png)
+  ![image](https://github.com/user-attachments/assets/f3d705c1-15db-4508-86d5-c530afa0c8a4)
+
   
   * director, cast, country 컬럼: 결측값을 'Unknown'으로 대체.
   * rating 컬럼: 최빈값(Mode)을 사용하여 결측값 대체.
@@ -63,7 +64,9 @@ SK Networks AI 8기 2번째 단위 프로젝트입니다.
 * date_added를 날짜 형식으로 변환 후, 연도(year_added)와 월(month_added)로 분리.
 * duration 컬럼은 분(min) 또는 시즌(season) 데이터를 정수로 변환.
   
-![Untitled](IMG/df.png)        ➟        ![Untitled](IMG/df_after.png)
+![image](https://github.com/user-attachments/assets/437f9bb3-b5d9-42cc-8482-61490d74724d)
+        ➟        ![image](https://github.com/user-attachments/assets/e2c323b1-f356-4fa9-927c-9fdce4abe4b9)
+
 
 
 #### 1.3. 문자열 처리
@@ -76,24 +79,30 @@ EDA를 통해 데이터셋의 주요 특성과 패턴을 분석했습니다.
 #### 2.1. 데이터 분포
 * 영화는 데이터셋의 약 **69.14%**를 차지하며, TV 쇼는 약 **30.86%**로 나타남.
   
-  ![Untitled](IMG/movies&tv_data.png)
+  ![image](https://github.com/user-attachments/assets/e4a4f357-1b8f-41f4-a995-7b80c6e8b827)
+
 * 넷플릭스 콘텐츠는 미국, 인도, 영국 순으로 제작된 비중이 높음.
   
-  ![Untitled](IMG/top_nation.png)
+  ![image](https://github.com/user-attachments/assets/e167476e-b43e-4d7d-a525-38794c3ea1ea)
+
 * 장르별로는 드라마, 코미디, 다큐멘터리가 상위권에 위치.
   
-  ![Untitled](IMG/top_genre.png)
+  ![image](https://github.com/user-attachments/assets/5cc7317c-3c05-4b58-8e06-33fbe5edca28)
+
 * 대부분의 콘텐츠는 성인 및 젊은 성인 연령대를 대상으로 제작.
   
-  ![Untitled](IMG/age_groups.png)
+  ![image](https://github.com/user-attachments/assets/309a33f2-6c5c-4c74-862b-f00df400ffde)
+
 
 #### 2.2. 연도별 콘텐츠 분석
 * 콘텐츠 추가 수는 매년 증가했으며, 특히 10월~1월 사이에 많은 콘텐츠가 추가됨.
   
-  ![Untitled](IMG/add_months.png)
+  ![image](https://github.com/user-attachments/assets/1c3c1ef0-1d45-4440-9912-58b24bf8341a)
+
 * COVID-19로 인해 2020년에 추가된 영화 수가 감소했으나, TV 쇼는 증가세를 보임.
   
-  ![Untitled](IMG/2008_netflix.png)
+  ![image](https://github.com/user-attachments/assets/e6fbddde-c321-4cad-8fe9-f9ebdffda311)
+
   
 ### 📝 3. 텍스트 기반 데이터 처리
 텍스트 데이터를 전처리하고 분석 가능한 형식으로 변환하는 작업을 수행했습니다.
@@ -115,7 +124,8 @@ EDA를 통해 데이터셋의 주요 특성과 패턴을 분석했습니다.
 #### 3.4. 차원 축소
 * 주성분 분석(PCA)을 사용하여 데이터의 차원을 축소.
 * 약 4000개의 구성 요소만으로도 분산의 80% 이상을 설명.
-  ![Untitled](IMG/pca.png)
+  ![image](https://github.com/user-attachments/assets/462fafdb-fa63-4f86-b766-2dcb6c9b444a)
+
 
 
 ### 🧐 4. 클러스터링
@@ -125,15 +135,20 @@ EDA를 통해 데이터셋의 주요 특성과 패턴을 분석했습니다.
 
 * 최적 클러스터 수 결정:
   * 엘보우(Elbow) 기법과 **실루엣 점수(Silhouette Score)**를 통해 클러스터 수를 결정.
-    ![Untitled](IMG/elbow.png) ![Untitled](IMG/silhouette.png)
+    ![image](https://github.com/user-attachments/assets/ad3cc637-133f-4239-9e40-849bb5c62cdc)
+ ![image](https://github.com/user-attachments/assets/229561b1-9948-4c16-8e01-fcaff68a807e)
+
   * 최적의 클러스터 수: 6개.
     
 * 결과 시각화:
   * 각 클러스터의 콘텐츠 수를 시각화하여 클러스터의 분포를 분석.
   * 클러스터별 주요 키워드를 워드클라우드로 시각화하여 각 클러스터의 주제를 도출.
-    ![Untitled](IMG/kmeans_1.png)
-    ![Untitled](IMG/kmeans_2.png)
-    ![Untitled](IMG/kmeans_3.png)
+    ![image](https://github.com/user-attachments/assets/3e04009e-3766-47d3-9245-8130f027e5e2)
+
+    ![image](https://github.com/user-attachments/assets/1bacdf0a-7d69-44eb-ab1d-4424eba64361)
+
+    ![image](https://github.com/user-attachments/assets/d543ba20-ddf3-4ac1-aaad-a87b60f78c81)
+
     
 클러스터별 주요 키워드
 
@@ -143,7 +158,8 @@ EDA를 통해 데이터셋의 주요 특성과 패턴을 분석했습니다.
 4. 클러스터 3: "Crime, Murder, Adventure, Secret"
 5. 클러스터 4: "Comedian, Stage, Joke, Comedy Special"
 6. 클러스터 5: "Life, Find, New, take, young"
-   ![Untitled](IMG/6_word.png)
+   ![image](https://github.com/user-attachments/assets/fc49f74f-d50b-46d9-b5e9-280c5b2db15f)
+
    
 #### 4.2. 계층적 클러스터링
 
@@ -166,7 +182,8 @@ EDA를 통해 데이터셋의 주요 특성과 패턴을 분석했습니다.
 10. 클러스터 9: "Comedian, Stage, Show"
 11. 클러스터 10: "Nature, Planet, Animal"
 12. 클러스터 11: "Korean, Years, South, Man, Past"
-    ![Untitled](IMG/12_word.png)
+    ![image](https://github.com/user-attachments/assets/f18c1cf1-dc32-42ce-a6ad-d23bcce64582)
+
 
 ### ⚖️ 5. 콘텐츠 기반 추천 시스템
 
@@ -202,11 +219,15 @@ EDA를 통해 데이터셋의 주요 특성과 패턴을 분석했습니다.
 
 -------------------------------------------------------------------
 ## 🫠 기술 스택
-* 프로그래밍 언어: ![Untitled](IMG/python.png)
+* 프로그래밍 언어: ![image](https://github.com/user-attachments/assets/f87585a6-f46f-48f8-93f5-a13149a32328)
+
 * 라이브러리:
-  * 데이터 처리:  ![Untitled](IMG/pandas.png), ![Untitled](IMG/numpy.png)
+  * 데이터 처리:  ![image](https://github.com/user-attachments/assets/1420cf5e-9c11-4a08-bb7d-6b1bfbfd24e3)
+, ![image](https://github.com/user-attachments/assets/d4006206-1a7d-48d5-9929-2bfa8cb2142a)
+
   * 시각화:  Matplotlib, Seaborn, WordCloud
-  * 머신러닝:  ![Untitled](IMG/scikitlearn.png)
+  * 머신러닝:  ![image](https://github.com/user-attachments/assets/65307a12-bb00-4221-a374-4c7d576a6fb9)
+
   * 텍스트 처리: NLTK, TF-IDF Vectorizer
  
 
